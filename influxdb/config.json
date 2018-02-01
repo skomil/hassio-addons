@@ -10,6 +10,6 @@
     "image": "bestlibre/{arch}-influxdb",
     "options": {"env_var": []},
     "schema": {"env_var":[{"name": "str", "value": "str"}]},
-    "ports": {"8086/tcp": 8086},
+    "ports": [{"8083/tcp": 8083}, {"8086/tcp": 8086}, {"25826/tcp": 25826}]
     "arch": ["armhf", "amd64", "aarch64"]
 }
