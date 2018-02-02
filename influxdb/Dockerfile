@@ -26,5 +26,7 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 EXPOSE 8086
+EXPOSE 8083
+EXPOSE 25826
 ENTRYPOINT [ "/run.sh" ]
 CMD ["influxd"]
