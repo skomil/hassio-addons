@@ -27,6 +27,6 @@ RUN chmod a+x /run.sh
 
 EXPOSE 8086
 EXPOSE 8083
-EXPOSE 25826
+EXPOSE 25826:28526/udp
 ENTRYPOINT [ "/run.sh" ]
 CMD ["influxd"]
